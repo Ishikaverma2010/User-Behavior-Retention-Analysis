@@ -1,0 +1,108 @@
+# 📊 User Behavior & Retention Analysis (E-commerce)
+
+## 🚀 Project Overview
+
+This project analyzes user behavior and retention patterns for an e-commerce platform similar to Stylenhomes.
+
+The goal is to identify:
+
+* Why users do not return
+* Which users generate the most value
+* How to improve repeat purchases
+
+---
+
+## 🎯 Business Problem
+
+The platform is facing:
+
+* Low repeat purchase rate
+* High drop-off after first purchase
+
+This analysis focuses on improving **customer retention and lifetime value (LTV)**.
+
+---
+
+## 📂 Dataset
+
+Synthetic dataset with 10,000+ rows including:
+
+* user_id
+* session_id
+* timestamp
+* product_id
+* category
+* action (view, cart, purchase)
+* session_duration
+
+---
+
+## 🔍 Key Analysis
+
+### 1. User Behavior Analysis
+
+* New vs Returning Users
+* Session behavior patterns
+* Time spent vs conversion
+
+### 2. Retention Analysis
+
+* Cohort analysis based on first purchase
+* Retention rate over time
+
+### 3. User Segmentation
+
+* One-time buyers
+* Frequent users
+* High-value users
+
+---
+
+## 📊 Dashboard
+
+The dashboard includes:
+
+* Retention curve
+* Conversion trends
+* User segmentation
+* KPI metrics (conversion rate, repeat purchase rate)
+
+---
+
+## 📈 Key Insights
+
+* Majority of users are one-time buyers
+* Longer sessions lead to higher conversions
+* Repeat users contribute significantly higher revenue
+
+---
+
+## 💡 Recommendations
+
+* Improve onboarding for first-time users
+* Introduce retention campaigns (email/discounts)
+* Optimize product pages to increase engagement
+
+---
+
+## 🛠 Tools Used
+
+* Python (Pandas, Matplotlib)
+* SQL
+* Tableau / Power BI
+
+---
+
+## 📌 Outcome
+
+This project demonstrates:
+
+* Product thinking
+* Data analysis skills
+* Business decision-making
+
+---
+
+## 👤 Author
+
+Ishika Verma
