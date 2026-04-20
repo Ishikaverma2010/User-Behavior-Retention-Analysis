@@ -2,3 +2,27 @@ import pandas as pd
 
 df = pd.read_csv("../data/ecommerce_data.csv")
 df.head()
+# Repeat Purchase Rate
+purchase_counts = df[df['action']=='purchase'].groupby('user_id').size()
+repeat_rate = (purchase_counts > 1).mean()
+
+print("Repeat Purchase Rate:", repeat_rate)
+# Cohort Analysis
+df['timestamp'] = pd.to_datetime(df['timestamp'])
+
+first_purchase = df[df['action']=='purchase'].groupby('user_id')['timestamp'].min()
+df['cohort'] = df['user_id'].map(first_purchase).dt.to_period('M')
+df['month'] = df['timestamp'].dt.to_period('M')
+
+cohort = df.groupby(['cohort','month'])['user_id'].nunique().unstack()
+retention = cohort.divide(cohort.iloc[:,0], axis=0)
+
+retention
+# Visualization
+import matplotlib.pyplot as plt
+
+retention.T.plot()
+plt.title("Retention Curve")
+plt.show()
+
+
